@@ -23,7 +23,9 @@ If you have never used CERNBOX before, you need to just login in (https://cernbo
 
 If you have a local ROOT installation with Python enabled and you have installed also the python Jupyter and Metakernel packages you can run the notebooks locally on your computer, by typing
 `root --notebook`
-In this case you can go directly to the 5th item.  
+In this case you can go directly to the 5th item.
+
+Alternatively you can download a Virtual machine (CernVM) which contains all the needed software to run the notebook locally
 
 ### Instructions for SWAN: 
 
@@ -56,4 +58,50 @@ kernel.
      * Each swan container has 2 GB of ram assigned, and only one core assigned
 
 
+## Instructions for using the Virtual Machine Image
 
+Alternatively you can run ROOT and also the notebook using a Virtual Machine which contains all the required software.
+
+* You need to have VirtualBox installed on your computer. If you don't have it download it from
+https://www.virtualbox.org/wiki/Downloads
+
+* Download the CernVM image from https://cernbox.cern.ch/index.php/s/oKBM14VDqGFT7Wl
+
+* Open the image in VirtualBox and Start the machine
+
+* Login with the given User name and given password
+
+* Open a terminal window
+
+* configure the environment by sourcing this script:
+
+   `. .  /cvmfs/sft.cern.ch/lcg/views/LCG_88/x86_64-centos7-gcc62-opt/setup.sh`
+
+* clone the git repository with the notebooks as described before
+
+ `git clone  https://github.com/lmoneta/stat-course-ipmu.git`
+
+* Run the notebook by typing in the terminal
+
+  `root --notebook`
+
+
+## Instructions for updating the Notebook repository
+
+These are the instructions in case you need to update the repository to get the last version of the notebook.
+
+* Check first if you have changed some files have changed in your repository by typing 
+
+`git status`
+
+* If some modified some notebooks, stash first your changes by doing
+
+`git stash`
+
+* Update your local  repository by doing:
+
+`git pull --rebase`
+
+* Reapply now your changes. In case of conflicts you might need to fix them by merging manually the changes or copying your modified files
+
+`git stash apply`
