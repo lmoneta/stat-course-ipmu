@@ -17,8 +17,10 @@ n a nutshell, "SWAN (Service for Web based ANalysis) is a platform to perform in
 * If you have a CERN account already you can use it for the course. You need to have an active **CERNBOX** to use Swan.
 If you have never used CERNBOX before, you need to just login in (https://cernbox.cern.ch/).
 
-* If you don't have a CERN account, please contact  me directly and a temporary accounts is made available for the course. CERNBOX shoukld be activated in these account. In case it is not you will get
-  an error connecting to SWAN. In this case please login first at https://cernbox.cern.ch/ 
+* If you don't have a CERN account,  a temporary accounts is made available for the course. CERNBOX shoukd be activated in these account. In case it is not you will get
+an error connecting to SWAN. In this case please login first at https://cernbox.cern.ch/.
+
+Please fill also the form for the temporary account registration, https://goo.gl/forms/ZhoVzBjiQVEiTjsn2
 
 
 If you have a local ROOT installation with Python enabled and you have installed also the python Jupyter and Metakernel packages you can run the notebooks locally on your computer, by typing
