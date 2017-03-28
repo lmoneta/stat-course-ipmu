@@ -90,17 +90,19 @@ https://www.virtualbox.org/wiki/Downloads
 
 ## Instructions for updating the Notebook repository
 
-These are the instructions in case you need to update the repository to get the last version of the notebook.
+These are the instructions in case you need to update the repository to get the last version of the notebooks.
 
-* Check first if you have changed some files have changed in your repository by typing 
+* Open first a **Terminal** window.  
+
+* Check first if you have changed some files (Notebooks) in your repository by typing:
 
 `git status`
 
-* git status will show if you have modified some files (notebooks) locally. In this case, if you don;t want to loose your changes just do
+* git status will show if you have modified some files (notebooks) locally. In this case, if you don't want to loose your changes just do:
 
 `git stash`
 
-* Update your local  repository by doing:
+* Update then your local  repository by doing:
 
 `git pull --rebase`
 
