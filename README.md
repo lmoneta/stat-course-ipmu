@@ -96,7 +96,7 @@ These are the instructions in case you need to update the repository to get the 
 
 `git status`
 
-* If some modified some notebooks, stash first your changes by doing
+* git status will show if you have modified some files (notebooks) locally. In this case, if you don;t want to loose your changes just do
 
 `git stash`
 
@@ -104,6 +104,8 @@ These are the instructions in case you need to update the repository to get the 
 
 `git pull --rebase`
 
-* Reapply now your changes. In case of conflicts you might need to fix them by merging manually the changes or copying your modified files
+* Reapply now your changes. 
 
 `git stash apply`
+
+In case of conflicts you might need to fix them by merging manually the changes or copying your modified files in a new directory and clone again the repository, using `git  clone  https://github.com/lmoneta/stat-course-ipmu.git`
